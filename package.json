@@ -1,0 +1,20 @@
+{
+  "name": "yamli-cli",
+  "version": "0.0.1",
+  "description": "A YAML+Include command line parser",
+  "main": "lib/yamli.js",
+  "scripts": {
+    "build-mac": "pkg -t node8-macos-x64 --out-path build lib/yamli.js",
+    "build-linux": "pkg -t node8-linux-x86,node8-linux-x64,node8-linux-armv6,node8-linux-armv7 --out-path lib/yamli.js"
+  },
+  "author": "Wojtek 'suda' Siudzinski",
+  "license": "MIT",
+  "devDependencies": {
+    "pkg": "^4.3.1"
+  },
+  "dependencies": {
+    "get-stdin": "^6.0.0",
+    "js-yaml": "^2.1.3",
+    "yamli": "0.0.1"
+  }
+}

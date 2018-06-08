@@ -1,0 +1,2 @@
+foo: bar
+baz: !include test/boo.yaml
