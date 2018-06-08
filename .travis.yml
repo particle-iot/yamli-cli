@@ -1,0 +1,19 @@
+language: node_js
+node_js: 8
+jobs:
+  include:
+  - stage: Build macOS
+    script: npm run build-osx
+    os: osx
+  - stage: Build Linux
+    script: npm run build-linux && ls -lha build/
+    os: linux
+deploy:
+  provider: releases
+  api_key:
+    secure: CRxDaX2ZR0BI6hbvUB792BfpnlPuEZh6fcpNxL/zi8PN64Idm8eva7dcP0KuiNXSdArdgiqC5HQVhnoYh47QbO0KmrK9eqOrBwDFlXXJ3A0f1j+5R5+gNiyTp3LaeG/NSyY/5lAykHSiNZCc53E7Twz8lWi7l8yO8tIGszqCzs/xwWSsWwmUxBbO8plM6oC4iG1/wb22WcqXbYkkEmoOb2u16UEcIkqUjClZY8gVSNKfwJ3u3Kfz3tFkDCMxWbGuqhMwpg4mT4O1lHq1BC1OAKPgG8tFPdlLxykrVJ1wCLXbRCFxg0MtqOjzIQo/38uMFYpGtgsanZjeqGhAmNZ0mPIMWIXTDNgGJFw8+Soacm3WP/0vJbst63hFHhWKDAu1OCmImmBakwovewC2PAeJw+1Ue+gVUUa0iICYeW1/1thAKqurjbwcTXjDJL2CVBnddqVauRGn0BhzGTpwnan5Y1/qBi0U0b9j4a8OszNXbYwOK33kmYkj238kkVH//dFLMDOyJZEQcsVirMlcsTcAv5aN8Be1qcZ/RN6UuUbyEx/9LFjFbZl423Mc0r2gPShu9gIIT+fwtbKmcOUUvcBNxigi2cXcJ9zvNMhrUmE/8a47KoxJZcLD9e8CsCHYj5QE1lPHm1nukORdjn+6tOT+2lCML02ZgGxgw9UuO8E46RA=
+  file_glob: true
+  file: build/*
+  skip_cleanup: true
+  on:
+    repo: suda/yamli-cli
