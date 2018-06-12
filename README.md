@@ -32,7 +32,7 @@ bar:
 Go to [Releases](https://github.com/suda/yamli-cli/releases), download version for your OS/arch, make it executable and place somewhere in `PATH`. I.e. for macOS:
 
 ```sh
-$ wget https://github.com/suda/yamli-cli/releases/download/0.0.3/yamli-osx
+$ wget https://github.com/suda/yamli-cli/releases/download/v0.0.3/yamli-osx
 $ chmod +x yamli-osx
 $ mv yamli-osx /usr/local/bin/yamli
 ```
