@@ -1,4 +1,4 @@
-# YAML + Include
+# YAML + Include [![Build Status](https://travis-ci.org/suda/yamli-cli.svg?branch=master)](https://travis-ci.org/suda/yamli-cli)
 
 This executable allows a quick way of splitting big YAML files using `!include` tag.
 
@@ -32,7 +32,7 @@ bar:
 Go to [Releases](https://github.com/suda/yamli-cli/releases), download version for your OS/arch, make it executable and place somewhere in `PATH`. I.e. for macOS:
 
 ```sh
-$ wget https://github.com/suda/yamli-cli/releases/download/0.0.1/yamli-osx
+$ wget https://github.com/suda/yamli-cli/releases/download/0.0.3/yamli-osx
 $ chmod +x yamli-osx
 $ mv yamli-osx /usr/local/bin/yamli
 ```
