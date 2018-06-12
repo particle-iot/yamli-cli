@@ -1,6 +1,6 @@
 {
   "name": "yamli-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A YAML+Include command line parser",
   "main": "lib/yamli.js",
   "scripts": {
